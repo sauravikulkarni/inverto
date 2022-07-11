@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<style>
+    .popup {
+        min-width: 344px;
+        min-height: 188px;
+        background: lavenderblush;
+        box-shadow: 0px 4px 4px cyan;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 2.0rem;
+        font-family: 'Shadows Into Light', cursive;
+        text-align: center;
+        color: coral;
+
+    }
+
+    p {font-family: 'Roboto', sans-serif;
+        font-size: 1.0rem;
+    }
+
+    .button {
+        background-color: lightcyan;
+        position: relative;
+        height: 2rem;
+        width: 4rem;
+        border-radius: 25px;
+        transition: 1s;
+        font-family: 'Roboto', sans-serif;
+        align-self: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    .half {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin: 0 auto;
+    }
+
+    .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        background-color: coral;
+        pointer-events: none;
+        transition: 1s;
+        margin: 0 auto;
+
+    }
+
+    @keyframes transformToCoral {
+        0% {
+            background-color: lightcyan;
+        }
+
+        100% {
+            background-color: lightcyan;
+        }
+    }
+
+    @keyframes transformToDarkCoral {
+        0% {
+            background-color: lightcyan;
+        }
+
+        100% {
+            background-color: lightcyan;
+        }
+    }
+
+    @keyframes moveCircleRight {
+        0% {
+            left: 0;
+            transform: translateX(0);
+            background-color: lightcyan;
+        }
+
+        100% {
+            left: 100%;
+            transform: translateX(-100%);
+            background-color: coral ;
+        }
+    }
+
+    @keyframes moveCircleLeft {
+        0% {
+            left: 100%;
+            transform: translateX(-100%);
+            background-color: lavender;
+        }
+
+        100% {
+            left: 0;
+            transform: translateX(0);
+            background-color: coral;
+        }
+    }
+</style>
+
+<body>
+    <div class="popup">
+        <h2> <span class="lavender">inverto.</span></h2>
+        <p>
+            inverto inverts the theme of any website to dark or light!
+        </p>
+        <div class="button">
+            <div class="half" style="left: 0.5px;">revert</div>
+            <div class="half" style="right: 0.5px; text-align: right;">invert</div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <script src="./popup.js">
+    </script>
+
+</body>
+
+
+</html>
