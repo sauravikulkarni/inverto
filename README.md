@@ -1,5 +1,4 @@
 #### Project Title: Inverto
-#### Video Demo: https://youtu.be/tzcBwouTXD0
 #### Description:
 
 This is Inverto, a simple Chrome extension that inverts the colors on your webpage for a smoother browsing experience. On clicking the icon of the extension, the colors of the current webpage we're visitng are inverted. By using this feature, we can easily switch to dark mode to view things on the webpage more comfortably.
